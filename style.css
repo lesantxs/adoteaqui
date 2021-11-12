@@ -4,91 +4,337 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    background: #f8efc2;
+.cabecalho {
+    background-color: #f8efc2;
     height: 50px;
     width: 100%;
+    display: flex;
+    font-family: 'Patrick Hand', cursive;
 }
 
-.adote{
+
+.adote {
+    height: 100%;
+    width: 38%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 700px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 0 15px 15px 0;
     background: #f6eda4;
     border-right: 3px solid #f29785;
+    transition: 0.5s;
 }
 
 .adote img {
-    width: 30px;
-    height: 30px;
-    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    width: 33px;
+    padding-right: 5px;
 }
 
-.adote h1 {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 30px;
-    transition: 0.7s; 
-}
-
-.adote h1:hover {
-    font-size: 34px;
+.adote:hover {
+    font-size: 22px;
 }
 
 .menu {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     text-transform: uppercase;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 20px;
     font-weight: bold;
-    width: 100%;
+    color: #f29785;
+    font-size: 20px;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
+    flex-direction: row;
+    margin: 20px;
     list-style: none;
 }
 
 .menu li {
-    padding: 5px 20px; 
-    color: #f29785;
+    padding: 15px;
 }
 
 .menu li:hover {
     color: #e73e75;
 }
 
+.menu li:active {
+    color: #fffbe1;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit
+}
+
+.conteudo {
+    background: #fffbe1; 
+    text-align: center;
+}
+
+.labrador {
+    width: 100%;
+}
+
+.titulo {
+    font-family: 'Patrick Hand', cursive;
+    padding: 5px;
+    color: #f29785;
+    
+}
+
+.conteudo h2 {
+    padding: 20px;
+    font-size: 35px;
+    color: #e73e75;
+}
+
+.conteudo h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.container {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row
+}
+
+.motivos {
+    border: 4px double #f29785;
+    width: 30%;
+    padding: 25px 50px; 
+    font-size: 18px;
+}
+
+.ultimo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.ultimo h3 {
+    font-size: 28px;
+    font-family: 'Patrick Hand', cursive;
+    color: #f29785;
+}
+
+.ultimo p {
+    font-size: 20px;
+    width: 60%;
+    padding-top: 10px;
+}
+
+.felicidade { 
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    margin-bottom: 10px;
+    color: #e73e75;;
+}
+
+.pets h3 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 35px;
+    text-decoration: underline;
+    color: #e73e75;
+    padding: 30px;
+}
+
+.cachorros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cachorros img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.cachorros h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: #f29785;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 50px 0;
+    list-style: none;
+    padding: 20px;
+}
+
+.imagens li {
+    width: 450px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens img {
+    width: 60%;
+    border-radius: 25px;
+    padding: 4px;
+    border: 4px double #f29785;
+}
+
+.adotar {
+    background-color: #f6eda4;
+    color: #f29785;
+    border: none;
+    width: 50%;
+    padding: 10px 5px;
+    margin: 15px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.adotar:hover {
+    background-color: #f8efc2;
+    color: #e73e75;
+}
+
+.adotar:active {
+    color: #fffbe1;
+}
+
+.divisao {
+    width: 200px;
+}
+
+.gatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gatos img {
+    width: 60px;
+}
+
+.gatos h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: #f29785;
+}
+
+.rodape {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: #f8efc2;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.rodape img {
+    
+    width: 50px;
+    padding: 10px;
+}
+
 @media (max-width: 700px) {
-    .container {
-        background: none;
+     .cabecalho {
+        width: 100%;
+        height: auto;
         flex-direction: column;
+    }    
+    
+    .adote{ 
+        border: none;
+        width: 100%;
+        height: 60px;
     }
-    .adote {
+
+    .adote img {
+        width: 35px;
+    }
+
+    .adote h1 {
         display: none;
     }
 
-    .menu li {
-        display: flex;
-        flex-direction: column;
-        border-bottom: 1px solid #f29785;
-    }
-
+    
     .menu ul {
-        position: fixed;
-        width: 25%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        background-color: #f8efc2;
-        right: 0;
-        top: 0
     }
-}
 
+    .menu li {
+        border-bottom: 1px solid #f29785
+    }
+
+    .labrador {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .container li {
+        margin: 5px;
+        width: 90%;
+        padding: 5%;
+    }
+
+    .ultimo h3 {
+        font-size: 30px;
+    }
+
+    .ultimo {
+        width: 100%;
+    }
+
+    .ultimo h3{
+        width: 100%;
+    }
+
+    .felicidade {
+        width: 100%;
+    }
+
+    .ultimo p {
+        width: 100%
+    }
+
+    .divisao {
+        width: 50%;
+    }
+
+    .rodape {
+        width: 100%;
+    }
+
+}

@@ -177,6 +177,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-basis: 25%;
+    flex-grow: 1;
     box-sizing: border-box;
     padding: 50px 0;
     list-style: none;

@@ -25,6 +25,7 @@
     background: #f6eda4;
     border-right: 3px solid #f29785;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .adote img {
@@ -59,6 +60,7 @@
 
 .menu li {
     padding: 15px;
+    cursor: pointer;
 }
 
 .menu li:hover {
